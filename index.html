@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Abdallah Hussein | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body class="dark-mode">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Ahmed<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education & Certs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <h3 class="subtitle">Hello, I'm</h3>
+                <h1 class="title">Ahmed Abdallah Hussein</h1>
+                <h2 class="profession">Data Entry & Office Support Specialist</h2>
+                <p class="description">
+                    Professional dedicated to office management, accurate data entry, cashier operations, and
+                    high-quality printing services. I also craft visually appealing graphic designs and have basic
+                    frontend development knowledge.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="img/CV.pdf" class="btn btn-outline" target="_blank">Download CV</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+201117683114" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:AhmedAbdallh.h00@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Ahmed-AXS" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <div class="img-box">
+                    <div class="img-placeholder">
+                        <img src="img/Ahmed_icon.png" alt="...">
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-keyboard"></i> Data Entry
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-print"></i> Printing
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>My <span>Services</span></h2>
+                <p>What I offer to help your business grow</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-fade">
+                    <div class="office-icons">
+                        <div class="icon"><i class="fas fa-file-word"></i></div>
+                        <div class="icon"><i class="fas fa-file-excel"></i></div>
+                        <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                        <div class="icon"><i class="fas fa-file-pdf"></i></div>
+                    </div>
+                    <h3>Data Entry & Admin</h3>
+                    <p>Accurate and efficient data entry, document management, and comprehensive administrative support.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card reveal-fade" style="transition-delay: 0.1s;">
+                    <div class="icon"><i class="fas fa-cash-register"></i></div>
+                    <h3>Cashier & Customer Service</h3>
+                    <p>Professional handling of transactions, customer inquiries, and ensuring a smooth checkout
+                        experience.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card reveal-fade" style="transition-delay: 0.2s;">
+                    <div class="icon"><i class="fas fa-print"></i></div>
+                    <h3>Printing Services</h3>
+                    <p>High-quality document formatting, printing operations, copying, and binding services.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card reveal-fade" style="transition-delay: 0.3s;">
+                    <div class="icon"><i class="fas fa-object-group"></i></div>
+                    <h3>Graphic Design</h3>
+                    <p>Creating visual concepts, marketing materials, and digital graphics using industry-standard
+                        tools.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card reveal-fade" style="transition-delay: 0.4s;">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Basic Frontend</h3>
+                    <p>Junior level knowledge in HTML, CSS, and JavaScript to build simple and functional web
+                        interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Work Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>Work <span>Samples</span></h2>
+                <p>A glimpse into my recent projects</p>
+            </div>
+            <div class="folders-grid">
+
+                <!-- Folder 1: Data & Office -->
+                <div class="animated-folder reveal-fade" data-color="blue">
+                    <div class="folder-bg-gradient"></div>
+                    <div class="folder-core">
+                        <div class="f-back"></div>
+                        <div class="f-tab"></div>
+                        <div class="f-cards">
+                            <div class="f-card c-1" onclick="openLightbox(this)">
+                                <img src="img/dataEn1.jpg" alt="Data Entry">
+                                <div class="f-card-title">Format data using Word</div>
+                            </div>
+                            <div class="f-card c-2" onclick="openLightbox(this)">
+                                <img src="img/dataEn2.jpg" alt="Finance">
+                                <div class="f-card-title">Writing and formatting data using Excel</div>
+                            </div>
+                            <div class="f-card c-3" onclick="openLightbox(this)">
+                                <img src="img/dataEn3.jpg" alt="Office">
+                                <div class="f-card-title">Creating presentations using PowerPoint</div>
+                            </div>
+                        </div>
+                        <div class="f-front"></div>
+                        <div class="f-glass"></div>
+                    </div>
+                    <div class="folder-text">
+                        <h3>Data & Office</h3>
+                        <p>3 projects</p>
+                    </div>
+                    <div class="folder-hover-label">Hover</div>
+                </div>
+
+                <!-- Folder 2: Graphic Design -->
+                <div class="animated-folder reveal-fade" data-color="purple" style="transition-delay: 0.1s;">
+                    <div class="folder-bg-gradient"></div>
+                    <div class="folder-core">
+                        <div class="f-back"></div>
+                        <div class="f-tab"></div>
+                        <div class="f-cards">
+                            <div class="f-card c-1" onclick="openLightbox(this)">
+                                <img src="img/graphic 1.jpg" alt="Brand Logo">
+                                <div class="f-card-title">Book cover design for graduation project</div>
+                            </div>
+                            <div class="f-card c-2" onclick="openLightbox(this)">
+                                <img src="img/graphic 2.jpg" alt="Flyers">
+                                <div class="f-card-title">Designing covers for university textbooks</div>
+                            </div>
+                            <div class="f-card c-3" onclick="openLightbox(this)">
+                                <img src="img/graphic 3.jpg" alt="Prints">
+                                <div class="f-card-title">Creating a simple logo for a new brand</div>
+                            </div>
+                        </div>
+                        <div class="f-front"></div>
+                        <div class="f-glass"></div>
+                    </div>
+                    <div class="folder-text">
+                        <h3>Graphic Design</h3>
+                        <p>3 projects</p>
+                    </div>
+                    <div class="folder-hover-label">Hover</div>
+                </div>
+
+                <!-- Folder 3: Web Setup -->
+                <div class="animated-folder reveal-fade" data-color="green" style="transition-delay: 0.2s;">
+                    <div class="folder-bg-gradient"></div>
+                    <div class="folder-core">
+                        <div class="f-back"></div>
+                        <div class="f-tab"></div>
+                        <div class="f-cards">
+                            <div class="f-card c-1" onclick="openLightbox(this)">
+                                <img src="img/Decoria.png" alt="Setup">
+                                <div class="f-card-title">A review site for Decoria finishing company</div>
+                            </div>
+                            <div class="f-card c-2" onclick="openLightbox(this)">
+                                <img src="img/hamsat_samt.png" alt="Frontend">
+                                <div class="f-card-title">Sign language learning courses website (project hamsat
+                                    samt)</div>
+                            </div>
+                            <div class="f-card c-3" onclick="openLightbox(this)">
+                                <img src="img/AL-ANSARY_PRESS.png" alt="Code">
+                                <div class="f-card-title">A website showcasing office services for Ansari Press.</div>
+                            </div>
+                        </div>
+                        <div class="f-front"></div>
+                        <div class="f-glass"></div>
+                    </div>
+                    <div class="folder-text">
+                        <h3>Web Setup</h3>
+                        <p>3 projects</p>
+                    </div>
+                    <div class="folder-hover-label">Hover</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>My <span>Skills</span></h2>
+                <p>Technical and professional proficiencies</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-column reveal-left">
+                    <h3>Technical Skills</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Data Entry</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Microsoft Office (Excel/Word/.. )</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Photoshop / Graphic Design</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML / CSS / JS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column reveal-right">
+                    <h3>Professional Skills</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Office Management</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Printing Operations</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Cashier & Customer Service</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Organization & Communication</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates Section -->
+    <section id="education" class="education section-padding">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>Education & <span>Certificates</span></h2>
+                <p>My academic background and professional qualifications</p>
+            </div>
+
+            <div class="education-container">
+                <!-- Education & Courses Grid -->
+                <div class="edu-info-grid reveal-left">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h3>Bachelor's Degree</h3>
+                            <h4>Business Information Systems (BIS)</h4>
+                            <p>Al Jazeera Academy - Al Mokattam <br>Graduation Year 2025</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="edu-details">
+                            <h3>Online Learning</h3>
+                            <h4>Various Professional Courses</h4>
+                            <p>Continuous self-development through specialized online platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates Grid -->
+                <h3 class="certs-title reveal-fade">My Certificates</h3>
+                <div class="certificates-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card reveal-fade">
+                        <div class="cert-img-wrapper" onclick="openLightbox(this)">
+                            <!-- Placeholder image, user will change -->
+                            <img src="img/ICDL Certificate.jpg" alt="ICDL Certificate">
+                            <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="cert-info">
+                            <h4>ICDL Certificate</h4>
+                            <p>International Computer Driving License</p>
+                            <div class="desc-content">
+                                <p>I hold an ICDL certificate &ndash; the International Computer Driving License,
+                                    accredited by the ICDL International Foundation, which proves my mastery of basic
+                                    computer skills and office applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card reveal-fade" style="transition-delay: 0.1s;">
+                        <div class="cert-img-wrapper" onclick="openLightbox(this)">
+                            <!-- Placeholder image, user will change -->
+                            <img src="img/Digital Egypt Initiative Certificate.jpg" alt="Digital Egypt Initiative">
+                            <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Digital Egypt Initiative</h4>
+                            <p>Web Development Track</p>
+                            <div class="desc-content">
+                                <p>I successfully completed the Web Development Challenger Track as part of a
+                                    scholarship program sponsored by the Egyptian Ministry of Communications and
+                                    Information Technology. This program aims to develop qualified professionals in web
+                                    development according to the latest international standards.</p>
+                                <p>During the program, I developed my practical skills in building interactive and
+                                    responsive websites, while applying best practices in coding and project management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="cert-card reveal-fade" style="transition-delay: 0.2s;">
+                        <div class="cert-img-wrapper" onclick="openLightbox(this)">
+                            <!-- Placeholder image, user will change -->
+                            <img src="img/Graduation Project Appreciation Certificate.jpg" alt="Graduation Project">
+                            <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Graduation Project</h4>
+                            <p>Certificate of Excellence & Recognition</p>
+                            <div class="desc-content">
+                                <p>I received a certificate of appreciation for my graduation project in recognition of
+                                    my outstanding efforts in implementing the project, which reflected my ability to
+                                    plan, implement, and work within a team to achieve professional results according to
+                                    high academic standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-content reveal-fade">
+                <div class="section-title">
+                    <h2>About <span>Me</span></h2>
+                </div>
+                <div class="about-card">
+                    <p>
+                        With a strong background in office administration, printing services, and data management, I
+                        bring efficiency and organization to every task I handle. My experience spans across accurate
+                        data entry, managing cashier operations, and delivering high-quality print materials.
+                    </p>
+                    <p>
+                        Beyond administrative duties, I have a passion for graphic design and a growing interest in
+                        frontend web development. I am dedicated to providing excellent service, maintaining attention
+                        to detail, and continuously expanding my skill set to meet modern digital demands.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-title reveal-fade">
+                <h2>Get in <span>Touch</span></h2>
+                <p>Let's work together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info reveal-left">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p class="Email_info">ahmedabdallah.h00@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+20 111 768 3114</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form reveal-right">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required name="user_name">
+                        <input type="email" placeholder="Your Email" required name="user_email">
+                    </div>
+                    <input type="text" placeholder="Subject" required name="user_subject">
+                    <textarea rows="5" placeholder="Your Message" required name="user_message"></textarea>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="form-message" class="form-message" style="display:none;"></div>
+
+
+                <!-- <form class="contact-form reveal-right" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required name="user_name">
+                        <input type="email" placeholder="Your Email" required name="user_email">
+                    </div>
+                    <input type="text" placeholder="Subject" required name="user_subject">
+                    <textarea rows="5" placeholder="Your Message" required name="user_message"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Ahmed<span>.</span></div>
+            <p>&copy; 2026 Ahmed Abdallah Hussein. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/+201117683114" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:AhmedAbdallh.h00@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Ahmed-AXS" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Project Image" id="lightbox-img">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
